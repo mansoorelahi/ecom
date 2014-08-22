@@ -1,10 +1,165 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Ecom</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+  <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+  <head>
+    <title>Ecom</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0">
+    <meta name="description" content="Online Grocery shopping Dubai" />
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            setTimeout(function() {
+                // Slide
+
+                // Accordion
+                $('#menu5 > li > a.expanded + ul').slideToggle('medium');
+                $('#menu5 > li > a').click(function() {
+                    $('#menu5 > li > a.expanded').not(this).toggleClass('expanded').toggleClass('collapsed').parent().find('> ul').slideToggle('medium');
+                    $(this).toggleClass('expanded').toggleClass('collapsed').parent().find('> ul').slideToggle('medium');
+                });
+            }, 250);
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    <!--[if IE]>
+    <script type="text/javascript" src="catalog/view/javascript/jquery/fancybox/jquery.fancybox-1.3.4-iefix.js"></script>
+    <![endif]-->
+
+
+    <script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
+    <script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+    <script type="text/javascript" src="catalog/view/javascript/jquery/ajax_add.js"></script>
+
+
+    <script>
+        function sumu(value1, value2) {
+            document.getElementById("timeslot_method").value = value1;
+            document.getElementById("delivery_date").value = value2;
+
+        }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/flexcroll/flexcrollstyles.css" />
+
+    <script type="text/javascript" src="catalog/view/javascript/flexcroll/flexcroll.js"></script>
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie7.css" />
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie6.css" />
+    <script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('#logo img');
+    </script>
+    <![endif]-->
+    <script type="text/javascript" src="catalog/view/javascript/css_browser_selector.js"></script>
+    <script type="text/javascript">
+
+        function noError(){return true;}
+        window.onerror = noError;
+
+    </script>
+    <style type="text/css">
+        .chrome .ui-datepicker-trigger {
+            background-position: left -1px;
+        }
+        .chrome #menu > ul > li > span {
+
+        }
+    </style>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-28864436-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="js/style.css" rel="stylesheet" type="text/css">
+
+
+    <script type="text/javascript" src="js/pirobox_extended_def_08_2011.js">
+    </script><script type="text/javascript">
+      $(document).ready(function() {
+          $.pirobox_ext({
+              piro_speed : 700,
+              zoom_mode : true,
+              move_mode : 'mousemove',
+              bg_alpha : 0.5,
+              piro_scroll : false,
+              share: false
+          });
+//$('#try_it').click()
+      });
+  </script>
+    <link rel="stylesheet" type="text/css" href="test2/jquery.autocomplete.css" />
+    <link rel="stylesheet" type="text/css" href="js/a_002.css">
+    <script language="javascript" type="text/javascript">
+        function mouseOverImage(name,img)
+        {
+            document.getElementById(name).src = img;
+        }
+
+        function mouseOutImage(name,img)
+        {
+            document.getElementById(name).src = img;
+        }
+    </script>
+
+    <script type='text/javascript' src='test2/jquery.autocomplete.js'></script>
+    <script type="text/javascript">
+        $().ready(function() {
+
+            $("#filter_name").autocomplete("test2/get_course_list2.php", {
+                width: 267,
+                matchContains: true,
+                //mustMatch: true,
+                //minChars: 1,
+                //	multiple: false,
+                //highlight: false,
+                multipleSeparator: ",",
+                selectFirst: false
+            });
+
+            $("#filter_name").result(function(event, data, formatted) {
+                $("#course_val").val(data[1]);
+            });
+        });
+    </script>
+    <style>
+
+        #exposeMask {
+            background:#072a88;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function open_popup() {
+            $('#myId').click();
+        }
+    </script>
+     <style>
+      body{
+          background-image: url(), url();
+          background-repeat: repeat-y;
+          background-position: top left, top right;
+      }
+  </style>
 </head>
 <body>
 

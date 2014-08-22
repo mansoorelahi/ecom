@@ -14,6 +14,19 @@ class User < ActiveRecord::Base
     end
   end
 
+  def self.from_omniauth(auth, current_user)
+    user = User.where(:provider => auth.provider, :uid => auth.uid).first
+      if user.blank?
+        user = User.new
+        user.password = Devise.friendly_token[0,10]
+        user.first_name = auth.info.first_name
+        user.last_name = auth.info.last_name
+        user.email = auth.info.email
+        auth.provider == "twitter" ?  user.save(:validate => false) :  user.save
+      end
+    user
+  end
+
   ##Methods
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first

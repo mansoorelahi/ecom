@@ -50,4 +50,5 @@ gem "binding_of_caller" , :group => :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+ruby "2.1.1"
 

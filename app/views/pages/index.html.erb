@@ -169,11 +169,11 @@
     }
 </style>
 <body class="" >
-<div id="offerstop" style="position:absolute;top:0px;left:34%;width:50px;height:60px;margin-left: 0px;cursor:pointer;z-index:100"><a href="/top-offers" ><img src="image/data/icons/0.gif"  /></a></div>
+<div id="offerstop" style="position:absolute;top:0px;left:34%;width:50px;height:60px;margin-left: 0px;cursor:pointer;z-index:100"><a href="/top-offers" ><img src="/assets/icons/0.gif"  /></a></div>
 <div id="container" >
 <div id="header">
   <h1 style="display: none;">Online Grocery Shopping in Dubai </h1>
-  <div id="logo"><a href="/"><img src="image/logo4.png" title="jasim.ae" alt="jasim.ae" id="logotop" /></a></div>
+  <div id="logo"><a href="/"><img src="/assets/logo4.png" title="jasim.ae" alt="jasim.ae" id="logotop" /></a></div>
   <div id="cart">
 
     <div class="content"></div>
@@ -188,7 +188,15 @@
     <input type="text" name="filter_name" id="filter_name" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
   </div>
   <div id="welcome">
-    <span id="hidemobile">Welcome ... You can </span><a  href="http://jasim.ae/index.php?route=account/login"><span>login</span></a> <span id="hidemobile">or</span> <a   href="http://jasim.ae/index.php?route=account/register"><span>create an account</span></a>
+    <%if user_signed_in?%>
+        <span id="hidemobile">Welcome <%=current_user.email.split("@")[0]%> </span>
+        <span><%= link_to "logout", destroy_user_session_path, :method => :delete %></span>
+    <%else%>
+        <span id="hidemobile">Welcome ... You can </span>
+        <%=link_to("login", new_user_session_path)%>
+        <span id="hidemobile">or</span>
+        <span><%=link_to("create an account", new_user_registration_path)%></span>
+    <%end%>
   </div>
   <div class="links"><a class="button1" href="http://jasim.ae/index.php?route=common/home"><span>Home</span></a>   <a  href="http://jasim.ae/index.php?route=product/purchased" >Previously Purchased</a>   <a href="http://jasim.ae/index.php?route=account/wishlist" id="wishlist_total">My Favorites List (0)</a><a class="button1" href="http://jasim.ae/index.php?route=account/account"><span>My Account</span></a><a class="button1" href="http://jasim.ae/index.php?route=checkout/cart"><span>Shopping Cart</span></a><a class="button1" href="http://jasim.ae/index.php?route=checkout/checkout"><span>Checkout</span></a></div>
 </div>
@@ -199,8 +207,8 @@
 <ul>
 
 
-<li onmouseover="mouseOverImage('iimg-Bakery','image/1.gif')"  onmouseout="mouseOutImage('iimg-Bakery','image/1.gif')" ><a  style='cursor: default;'  >
-  <img id="iimg-Bakery" src="image/1.gif"  alt="Bakery"  /><p>Bakery</p>
+<li onmouseover="mouseOverImage('iimg-Bakery','/assets/1.gif')"  onmouseout="mouseOutImage('iimg-Bakery','/assets/1.gif')" ><a  style='cursor: default;'  >
+  <img id="iimg-Bakery" src="/assets/1.gif"  alt="Bakery"  /><p>Bakery</p>
 </a>
       	      <span >
         
@@ -217,8 +225,8 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Fruit &amp; Vegetable','image/2.gif')"  onmouseout="mouseOutImage('iimg-Fruit &amp; Vegetable',image/2.gif')" ><a  style='cursor: default;'  >
-  <img id="iimg-Fruit &amp; Vegetable" src="image/2.gif"  alt="Fruit &amp; Vegetable"  /><p>Fruit &amp; Vegetable</p>
+<li onmouseover="mouseOverImage('iimg-Fruit &amp; Vegetable','/assets/2.gif')"  onmouseout="mouseOutImage('iimg-Fruit &amp; Vegetable','/assets/2.gif')" ><a  style='cursor: default;'  >
+  <img id="iimg-Fruit &amp; Vegetable" src="/assets/2.gif"  alt="Fruit &amp; Vegetable"  /><p>Fruit &amp; Vegetable</p>
 </a>
       	      <span >
         
@@ -238,8 +246,8 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Dairy &amp; Eggs','image/3.gif')"  onmouseout="mouseOutImage('iimg-Dairy &amp; Eggs','image/3.gif')" ><a  style='cursor: default;'  >
-  <img id="iimg-Dairy &amp; Eggs" src="image/3.gif"  alt="Dairy &amp; Eggs"  /><p>Dairy &amp; Eggs</p>
+<li onmouseover="mouseOverImage('iimg-Dairy &amp; Eggs','/assets/3.gif')"  onmouseout="mouseOutImage('iimg-Dairy &amp; Eggs','/assets/3.gif')" ><a  style='cursor: default;'  >
+  <img id="iimg-Dairy &amp; Eggs" src="/assets/3.gif"  alt="Dairy &amp; Eggs"  /><p>Dairy &amp; Eggs</p>
 </a>
       	      <span >
         
@@ -277,8 +285,8 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Drinks','image/4.gif')"  onmouseout="mouseOutImage('iimg-Drinks','image/4.gif')" ><a  style='cursor: default;'  >
-  <img id="iimg-Drinks" src="image/4.gif"  alt="Drinks"  /><p>Drinks</p>
+<li onmouseover="mouseOverImage('iimg-Drinks','/assets/4.gif')"  onmouseout="mouseOutImage('iimg-Drinks','/assets/4.gif')" ><a  style='cursor: default;'  >
+  <img id="iimg-Drinks" src="/assets/4.gif"  alt="Drinks"  /><p>Drinks</p>
 </a>
       	      <span >
         
@@ -316,8 +324,8 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Meat, Fish &amp; Chicken','image/5.gif')"  onmouseout="mouseOutImage('iimg-Meat, Fish &amp; Chicken','image/5.gif')" ><a  style='cursor: default;'  >
-  <img id="iimg-Meat, Fish &amp; Chicken" src="image/5.gif"  alt="Meat, Fish &amp; Chicken"  /><p>Meat, Fish &amp; Chicken</p>
+<li onmouseover="mouseOverImage('iimg-Meat, Fish &amp; Chicken','/assets/5.gif')"  onmouseout="mouseOutImage('iimg-Meat, Fish &amp; Chicken','/assets/5.gif')" ><a  style='cursor: default;'  >
+  <img id="iimg-Meat, Fish &amp; Chicken" src="/assets/5.gif"  alt="Meat, Fish &amp; Chicken"  /><p>Meat, Fish &amp; Chicken</p>
 </a>
       	      <span >
         
@@ -346,8 +354,8 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Frozen','image/6.gif')"  onmouseout="mouseOutImage('iimg-Frozen','image/6.gif')" ><a  style='cursor: default;'  >
-  <img id="iimg-Frozen" src="image/6.gif"  alt="Frozen"  /><p>Frozen</p>
+<li onmouseover="mouseOverImage('iimg-Frozen','/assets/6.gif')"  onmouseout="mouseOutImage('iimg-Frozen','/assets/6.gif')" ><a  style='cursor: default;'  >
+  <img id="iimg-Frozen" src="/assets/6.gif"  alt="Frozen"  /><p>Frozen</p>
 </a>
       	      <span >
         
@@ -379,8 +387,8 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Cans &amp; Jars','image/7.gif')"  onmouseout="mouseOutImage('iimg-Cans &amp; Jars','image/7.gif')" ><a  style='cursor: default;'  >
-  <img id="iimg-Cans &amp; Jars" src="image/7.gif"  alt="Cans &amp; Jars"  /><p>Cans &amp; Jars</p>
+<li onmouseover="mouseOverImage('iimg-Cans &amp; Jars','/assets/7.gif')"  onmouseout="mouseOutImage('iimg-Cans &amp; Jars','/assets/7.gif')" ><a  style='cursor: default;'  >
+  <img id="iimg-Cans &amp; Jars" src="/assets/7.gif"  alt="Cans &amp; Jars"  /><p>Cans &amp; Jars</p>
 </a>
       	      <span >
         
@@ -427,8 +435,8 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Packets &amp; Cereals','image/8.gif')"  onmouseout="mouseOutImage('iimg-Packets &amp; Cereals','image/8.gif')" ><a  style='cursor: default;'  >
-  <img id="iimg-Packets &amp; Cereals" src="image/8.gif"  alt="Packets &amp; Cereals"  /><p>Packets &amp; Cereals</p>
+<li onmouseover="mouseOverImage('iimg-Packets &amp; Cereals','/assets/8.gif')"  onmouseout="mouseOutImage('iimg-Packets &amp; Cereals','/assets/8.gif')" ><a  style='cursor: default;'  >
+  <img id="iimg-Packets &amp; Cereals" src="/assets/8.gif"  alt="Packets &amp; Cereals"  /><p>Packets &amp; Cereals</p>
 </a>
       	      <span >
         
@@ -472,8 +480,8 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Chocolate &amp; Snacks','image/9.gif')"  onmouseout="mouseOutImage('iimg-Chocolate &amp; Snacks','image/9.gif')" ><a  style='cursor: default;'  >
-  <img id="iimg-Chocolate &amp; Snacks" src="image/9.gif"  alt="Chocolate &amp; Snacks"  /><p>Chocolate &amp; Snacks</p>
+<li onmouseover="mouseOverImage('iimg-Chocolate &amp; Snacks','/assets/9.gif')"  onmouseout="mouseOutImage('iimg-Chocolate &amp; Snacks','/assets/9.gif')" ><a  style='cursor: default;'  >
+  <img id="iimg-Chocolate &amp; Snacks" src="/assets/9.gif"  alt="Chocolate &amp; Snacks"  /><p>Chocolate &amp; Snacks</p>
 </a>
       	      <span >
         
@@ -502,8 +510,8 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Cleaning &amp; Homecare','image/10.gif')"  onmouseout="mouseOutImage('iimg-Cleaning &amp; Homecare','image/10.gif')" ><a  style='cursor: default;'  >
-  <img id="iimg-Cleaning &amp; Homecare" src="image/10.gif"  alt="Cleaning &amp; Homecare"  /><p>Cleaning &amp; Homecare</p>
+<li onmouseover="mouseOverImage('iimg-Cleaning &amp; Homecare','/assets/10.gif')"  onmouseout="mouseOutImage('iimg-Cleaning &amp; Homecare','/assets/10.gif')" ><a  style='cursor: default;'  >
+  <img id="iimg-Cleaning &amp; Homecare" src="/assets/10.gif"  alt="Cleaning &amp; Homecare"  /><p>Cleaning &amp; Homecare</p>
 </a>
       	      <span >
         
@@ -544,7 +552,7 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Beauty &amp; Health','image/11.gif')"  onmouseout="mouseOutImage('iimg-Beauty &amp; Health','image/11.gif')" ><a  style='cursor: default;'  >
+<li onmouseover="mouseOverImage('iimg-Beauty &amp; Health','/assets/11.gif')"  onmouseout="mouseOutImage('iimg-Beauty &amp; Health','/assets/11.gif')" ><a  style='cursor: default;'  >
   <img id="iimg-Beauty &amp; Health" src="image/11.gif"  alt="Beauty &amp; Health"  /><p>Beauty &amp; Health</p>
 </a>
       	      <span >
@@ -589,7 +597,7 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Baby','image/12.gif')"  onmouseout="mouseOutImage('iimg-Baby','image/12.gif')" ><a  style='cursor: default;'  >
+<li onmouseover="mouseOverImage('iimg-Baby','/assets/12.gif')"  onmouseout="mouseOutImage('iimg-Baby','/assets/12.gif')" ><a  style='cursor: default;'  >
   <img id="iimg-Baby" src="image/12.gif"  alt="Baby"  /><p>Baby</p>
 </a>
       	      <span >
@@ -610,7 +618,7 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-Pets','image/13.gif')"  onmouseout="mouseOutImage('iimg-Pets','image/13.gif')" ><a  style='cursor: default;'  >
+<li onmouseover="mouseOverImage('iimg-Pets','/assets/13.gif')"  onmouseout="mouseOutImage('iimg-Pets','/assets/13.gif')" ><a  style='cursor: default;'  >
   <img id="iimg-Pets" src="image/13.gif"  alt="Pets"  /><p>Pets</p>
 </a>
       	      <span style='margin-left:-71px;'>
@@ -625,7 +633,7 @@
         	      </span>
 </li>
 
-<li onmouseover="mouseOverImage('iimg-More','image/14.gif')"  onmouseout="mouseOutImage('iimg-More','image/14.gif')" ><a style='width:76px;cursor: default;'   >
+<li onmouseover="mouseOverImage('iimg-More','/assets/14.gif')"  onmouseout="mouseOutImage('iimg-More','/assets/14.gif')" ><a style='width:76px;cursor: default;'   >
   <img id="iimg-More" src="image/14.gif"  alt="More"  /><p>More</p>
 </a>
       	      <span style='margin-left:-76px;' >

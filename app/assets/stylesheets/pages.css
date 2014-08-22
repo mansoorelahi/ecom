@@ -51,12 +51,12 @@
 .example_menu a.expanded  {
     background: #8BC53F ;
     padding: 5px 10px 5px 10px;
-    display: block;"
+    display: block;
 }
 .example_menu a.collapsed {
     background: #fff ;
     padding: 5px 10px 5px 10px;
-    display: block;"
+    display: block;
 }
 .example_menu a:hover {
     text-decoration: none;

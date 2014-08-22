@@ -109,7 +109,7 @@
 	display: block;
 	width: 22px;
 	height: 22px;
-	background: url('../image/bullets.png') no-repeat;
+	background: url('bullets.png') no-repeat;
 	text-indent:-9999px;
 	border:0;
 	margin-right:3px;
@@ -122,7 +122,7 @@
 	display:block;
 	width:30px;
 	height:30px;
-	background:url('../image/arrows.png') no-repeat;
+	background:url('arrows.png') no-repeat;
 	text-indent:-9999px;
 	border:0;
 }

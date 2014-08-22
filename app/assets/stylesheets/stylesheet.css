@@ -99,7 +99,7 @@ label {
 	position: relative;
 	z-index: 99;
 	
-	background: #FFFFFF url('../image/header.gif')  no-repeat;
+	background: #FFFFFF url('header.gif')  no-repeat;
 background-position:170px top;
 
 }
@@ -176,7 +176,7 @@ display:none;
 	text-decoration: none;
 }
 #header #cart .heading a span {
-	background: #FFFFFF url('../image/arrow-down.png') 100% 50% no-repeat;
+	background: #FFFFFF url('arrow-down.png') 100% 50% no-repeat;
 	padding-right: 15px;
 }
 #header #cart .content {
@@ -277,7 +277,7 @@ display:none;
 #header .button-search {
 	position: absolute;
 	left: 0px;
-	background: url('../image/button-search.png') center center no-repeat;
+	background: url('button-search.png') center center no-repeat;
 	width: 28px;
 	height: 24px;
 	border-right: 1px solid #CCCCCC;
@@ -440,7 +440,7 @@ float:inherit;
 }
 
 .menu-line {
-	background: url('../image/line.png') center top no-repeat;
+	background: url('line.png') center top no-repeat;
 	height: 2px;
 	margin-right: 6px;
 	float: left;
@@ -478,15 +478,15 @@ float:inherit;
 	color: #555555;
 }
 .success {
-	background: #EAF7D9 url('../image/success.png') 10px center no-repeat;
+	background: #EAF7D9 url('success.png') 10px center no-repeat;
 	border: 1px solid #BBDF8D;
 }
 .warning {
-	background: #FFD1D1 url('../image/warning.png') 10px center no-repeat;
+	background: #FFD1D1 url('warning.png') 10px center no-repeat;
 	border: 1px solid #F8ACAC;
 }
 .attention {
-	background: #FFF5CC url('../image/attention.png') 10px center no-repeat;
+	background: #FFF5CC url('attention.png') 10px center no-repeat;
 	border: 1px solid #F2DD8C;
 }
 .success .close, .warning .close, .attention .close, .information .close {
@@ -601,7 +601,7 @@ table.list .center {
 a.button {
 	display: inline-block;
 	padding-left: 6px;
-	background: url('../image/button-left.png') top left no-repeat;
+	background: url('button-left.png') top left no-repeat;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -612,14 +612,14 @@ a.button span {
 	font-weight: bold;
 	display: inline-block;
 	padding: 6px 12px 8px 5px;
-	background: url('../image/button-right.png') top right no-repeat;
+	background: url('button-right.png') top right no-repeat;
 }
 a.button:hover {
-	background: url('../image/button-left-active.png') top left no-repeat;
+	background: url('button-left-active.png') top left no-repeat;
 }
 a.button:hover span {
 	color: #FFFFFF;
-	background: url('../image/button-right-active.png') top right no-repeat;
+	background: url('button-right-active.png') top right no-repeat;
 }
 .buttons {
 	background: #FFFFFF;
@@ -650,7 +650,7 @@ a.button:hover span {
 	border-top: 1px solid #DDDDDD;
 	border-left: 1px solid #DDDDDD;
 	border-right: 1px solid #DDDDDD; 
-	background: #FFFFFF url('../image/tab.png') repeat-x;
+	background: #FFFFFF url('tab.png') repeat-x;
 	padding: 7px 15px 6px 15px;
 	float: left;
 	font-family: Arial, Helvetica, sans-serif;
@@ -960,14 +960,14 @@ padding-left:25px;
 	text-decoration: none;
 	padding-left: 18px;
 	display: block;
-	background: url('../image/add.png') left center no-repeat;
+	background: url('add.png') left center no-repeat;
 }
 .product-list .compare a {
 	color: #333333;
 	text-decoration: none;
 	padding-left: 18px;
 	display: block;
-	background: url('../image/add.png') left 60% no-repeat;
+	background: url('add.png') left 60% no-repeat;
 }
 .product-grid {
 	width: 100%;
@@ -1032,14 +1032,14 @@ padding-left:25px;
 	text-decoration: none;
 	padding-left: 18px;
 	display: block;
-	background: url('../image/add.png') left center no-repeat;
+	background: url('add.png') left center no-repeat;
 }
 .product-grid .compare a {
 	color: #333333;
 	text-decoration: none;
 	padding-left: 18px;
 	display: block;
-	background: url('../image/add.png') left center no-repeat;
+	background: url('add.png') left center no-repeat;
 }
 /* Product */
 .product-info {
@@ -1513,10 +1513,10 @@ color:#575757;
 	color: #555555;
 	margin-bottom: 15px;
 	cursor: pointer;
-	background: #F8F8F8 url('../image/arrow-right.png') 10px 50% no-repeat;
+	background: #F8F8F8 url('arrow-right.png') 10px 50% no-repeat;
 }
 .cart-module .active {
-	background: #F8F8F8 url('../image/arrow-down.png') 7px 50% no-repeat;
+	background: #F8F8F8 url('arrow-down.png') 7px 50% no-repeat;
 }
 .cart-module .cart-content {
 	padding: 0px 0px 15px 0px;
@@ -1719,7 +1719,7 @@ color:#575757;
 
 .button_add_small, a.button_add_small:visited {
 	margin-top: 0px;
-	background: url('../image/button_add_small.png') no-repeat left center transparent;
+	background: url('button_add_small.png') no-repeat left center transparent;
 	padding:0px;
 	text-decoration: none;
 	cursor:pointer;

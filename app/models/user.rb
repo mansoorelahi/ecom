@@ -18,11 +18,11 @@ class User < ActiveRecord::Base
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first
     unless user
-      user = User.new(name:auth.extra.raw_info.name,
-                      provider:auth.provider,
-                      uid:auth.uid,
-                      email:auth.info.email,
-                      password:Devise.friendly_token[0,20]
+      user = User.new(:first_name => auth.extra.raw_info.name,
+                      :provider => auth.provider,
+                      :uid => auth.uid,
+                      :email => auth.info.email,
+                      :password => Devise.friendly_token[0,20]
       )
       user.save
     end
@@ -50,10 +50,10 @@ class User < ActiveRecord::Base
           end
 
       if registered_user
-        registered_user.update_attributes(:name => auth.extra.raw_info.name, :provider => auth.provider, :uid => auth.uid)
+        registered_user.update_attributes(:first_name => auth.extra.raw_info.name, :provider => auth.provider, :uid => auth.uid)
         return registered_user
       else
-        user = User.new(:name => auth.extra.raw_info.name,
+        user = User.new(:first_name => auth.extra.raw_info.name,
                         :provider => auth.provider,
                         :uid => auth.uid,
                         :email => (auth.provider.to_s == "twitter" ? auth.uid + "@twitter.com" : auth.info.email),

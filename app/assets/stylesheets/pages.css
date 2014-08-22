@@ -1,0 +1,64 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.expand_all,
+.collapse_all {
+    cursor: pointer;
+}
+.example_menu {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border:solid #E8E8E8 2px;
+    font-size: 90%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    width:190px;
+}
+.example_menu ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width:190px;
+}
+
+.example_menu ul ul {
+    display: block;
+}
+
+.example_menu ul ul li a {
+    padding-left: 7px;
+    width: 160px;
+
+}
+.example_menu a {
+    color: #6d6e70;
+    cursor: pointer;
+    display: block;
+    border-bottom:solid 1px  #E8E8E8;
+    text-decoration: none;
+
+    font-weight: normal;
+
+
+}
+
+.example_menu a.expanded  {
+    background: #8BC53F ;
+    padding: 5px 10px 5px 10px;
+    display: block;"
+}
+.example_menu a.collapsed {
+    background: #fff ;
+    padding: 5px 10px 5px 10px;
+    display: block;"
+}
+.example_menu a:hover {
+    text-decoration: none;
+}
+

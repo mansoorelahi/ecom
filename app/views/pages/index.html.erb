@@ -189,7 +189,7 @@
   </div>
   <div id="welcome">
     <%if user_signed_in?%>
-        <span id="hidemobile">Welcome <%=current_user.email.split("@")[0]%> </span>
+        <span id="hidemobile">Welcome <%=current_user.full_name%> </span>
         <span><%= link_to "logout", destroy_user_session_path, :method => :delete %></span>
     <%else%>
         <span id="hidemobile">Welcome ... You can </span>

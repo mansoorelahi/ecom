@@ -1,0 +1,140 @@
+
+
+.toc-holder {
+width: 160px;
+
+}
+
+.toc-holder a:link, .toc-holder a:visited {
+	text-decoration: none;
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	-ms-transition: all .7s ease;
+	transition: all .7s ease;
+}
+
+.toc-holder li li a:link, .toc-holder li li a:visited {
+	padding-left: 40px;
+   
+}
+
+.toc-holder li li li a:link, .toc-holder li li li a:visited {
+	padding-left: 90px;
+}
+
+.toc-holder li a:hover {
+	background: #8bc53f;
+	border-left: solid 5px transparent;
+     color:#fff;
+}
+
+.toc-holder {
+
+
+
+}
+
+.toc-link:link,.toc-link:visited {
+	color: #575757;
+	position: relative;
+	display: block;
+	z-index: 20;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	width: 100%;
+	background: #444;
+}
+
+.toc-link:hover {
+	background: #666;
+    color:white;
+}
+
+.toc-link span {
+	font-size: 16px;
+	margin-right: 5px;
+	display: inline-block;
+	-webkit-transition: -webkit-transform .4s ease;
+	-moz-transition: -moz-transform .4s ease;
+	-o-transition: -o-transform .4s ease;
+	-ms-transition: -ms-transform .4s ease;
+	transition: transform .4s ease;
+}
+
+.toc-link span.rotate {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.toc {
+	padding:10px;
+	z-index: 10;
+	width: 103%;
+	    -moz-border-radius: 15px;
+border-radius: 15px;
+border:solid #6d6e70 2px;
+	
+}
+
+.toc-h1,.toc-h1 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+.toc-h1 a:link,.toc-h1 a:visited {
+	color: #575757;
+	padding: 5px 10px 5px 10px;
+	display: block;
+}
+
+.closed {
+	display: block;
+}
+
+
+
+.top-link:link,.top-link:visited {
+	display: block;
+	text-decoration: none;
+	position: fixed;
+	bottom: 0;
+	right: 2%;
+	color: #575757;
+
+	padding: 8px 16px 0 16px;
+	height: 30px;
+	font-size: 14px;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 480px) {
+	
+	.toc-holder {
+		left: 0;
+		right: 0;
+	}
+
+	.toc-link:link,.toc-link:visited {
+		width: 150%;
+	}
+	
+	.toc {
+		width: 155%;
+	}
+	
+	.top-link:link,.top-link:visited {
+		top: 2px;
+		z-index: 20;
+		background: none;
+	}
+	
+}

@@ -1,0 +1,41 @@
+
+
+#page-wrap { width: 100%; margin: 0 auto; }
+#page-wrap h1header{font-size:14px;color:000;}
+#page-wrap h3header{ font-weight:normal;color:000;}
+#page-wrap table { border-collapse: collapse; width: 100%;cursor: pointer;font-size:10px }
+#page-wrap td, th { border: 1px solid #ccc; ;padding:4px 8px 4px 8px;font-size:10px  }
+.h1header{
+font-size:16px;
+}
+.h3header{
+font-size:14px;
+}
+.slim { width: 130px;  }
+.hover {
+         width:220px;
+	
+	background-color: #eee;
+		 }
+
+.topvb{
+ background-color: #8BC53F;
+
+}
+
+
+.toppra{
+color: #FFF;
+font-size:24px;
+
+}
+
+.tooo{
+	color: #FFF;
+	font-weight:normal;
+}
+.cell{
+
+	font-weight:bold;
+
+}
